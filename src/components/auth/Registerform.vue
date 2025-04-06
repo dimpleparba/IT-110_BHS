@@ -1,15 +1,6 @@
-<script setup>
-
-</script>
-
 <template>
-    <v-responsive class="border rounded text-align: left">
-      <v-app :theme="theme">
-        
-        <v-main>
-          <v-container>
-            <v-img src="/Images/Blogo.png" max-width="100" alt="Logo" />
-            <v-card
+
+<v-card
               class="mx-auto pa-6 mt-0"
               elevation="8"
               rounded="lg" 
@@ -80,23 +71,8 @@
               <h5 class="text-center"> Already have an account? <router-link to="/login">Click here to login</router-link></h5>
 
             </v-card>
-          </v-container>
-        </v-main>
-  
-        <v-footer color="red-darken-2" border app>
-          2025 - Barangay Health Care</v-footer
-        >
-      </v-app>
-    </v-responsive>
-  </template>
-  <style scoped>
-  .v-main {
-    background-color: #ff8a80;
-  }
-  
-  .center {
-    text-align: center;
-  }
-  </style>
-  
 
+
+
+
+</template>

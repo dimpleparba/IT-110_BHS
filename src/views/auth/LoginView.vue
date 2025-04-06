@@ -1,12 +1,10 @@
 <script setup>
-import { ref } from 'vue'
 
-const theme = ref('light')
 const visible = ref(false)
 
-function onClick() {
-  theme.value = theme.value === 'light' ? 'dark' : 'light'
-}
+const { mobile } = useDisplay()
+
+
 </script>
 
 <template>
@@ -15,7 +13,7 @@ function onClick() {
       <v-app-bar class="px-3 py-3" color="red-darken-2" style="height: 95px">
         <v-img class="mx-auto" max-width="100" src="/Images/BHSlogo.png"></v-img>
         <v-spacer />
-        <v-img src="/Images/Blogo.png" max-width="100" alt="Logo" />
+        <v-img src="/Images/Blogo.png" :max-width="100" alt="Logo" />
       </v-app-bar>
       <v-main>
         <v-container>
