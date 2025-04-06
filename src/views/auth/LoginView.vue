@@ -83,11 +83,11 @@ function onClick() {
             <v-card-text class="text-center">
               <a
                 class="text-blue text-decoration-none"
-                href="#"
+                
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Sign up now <v-icon icon="mdi-chevron-right"></v-icon>
+               <router-link to="/register"> Sign up here</router-link> <v-icon icon="mdi-chevron-right"></v-icon>
               </a>
             </v-card-text>
           </v-card>
